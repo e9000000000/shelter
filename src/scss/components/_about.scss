@@ -1,0 +1,18 @@
+.about {
+  &__wrapper {
+    @include flex-all-center;
+  }
+  &__content {
+    flex-basis: 430px;
+    margin-left: 120px;
+  }
+  &__title {
+    max-width: 370px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  &__descr {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}

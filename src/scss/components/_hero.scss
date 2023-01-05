@@ -1,0 +1,32 @@
+.start {
+  padding-top: 180px;
+  min-height: 900px;
+  background-image: url(../img/hero-bg.jpg);
+  @include bg-cover;
+  &__wrapper {
+    @include flex-all-sb;
+  }
+  &__content {
+    flex-basis: 460px;
+  }
+  &__image {
+    transform: translateY(5px);
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 42px;
+    max-width: 310px;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: var(--light-color);
+  }
+  &__descr {
+    margin: 0;
+    margin-bottom: 42px;
+    color: var(--lactic-color);
+  }
+  &__btn {
+    background-color: var(--accent-color);
+  }
+}

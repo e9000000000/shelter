@@ -1,0 +1,23 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Georgia", sans-serif;
+  --content-width: 1200px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --btnhover-color: #fddcc4;
+  --accent-color: #f1cdb3;
+  --lactic-color: #cdcdcd;
+  --snowy-color: #fddcc4;
+  --light-color: #fff;
+  --wan-color: #b2b2b2;
+  --dark-color: #545454;
+  --btn-color: #292929;
+  --text-color: #4c4c4c;
+  --modal-color: #000;
+  --sectionbg-color: #f6f6f6;
+  --clear-color: #fafafa;
+}

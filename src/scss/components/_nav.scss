@@ -1,0 +1,23 @@
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+  &__link {
+    font-family: "Arial";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--lactic-color);
+  }
+  &__link:hover {
+    color: var(--clear-color);
+    transition: 0.3s ease-in;
+  }
+  &__link:active {
+    color: var(--clear-color);
+    border-bottom: 3px solid var(--accent-color);
+  }
+}
