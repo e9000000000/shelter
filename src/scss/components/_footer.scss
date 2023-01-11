@@ -1,0 +1,110 @@
+.footer {
+  padding-top: 55px;
+  background-image: url(../img/footerbg.png);
+  @include bg-cover;
+  &__wrapper {
+    @include flex-all-sb;
+  }
+  &__faq {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 300px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    color: var(--light-color);
+  }
+  &__faq-mail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+  }
+  &__faq-mail::before {
+    content: url(../img/mail.svg);
+    margin-right: 20px;
+  }
+  &__faq-phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+  }
+  &__faq-phone::before {
+    content: url(../img/phone.svg);
+    margin-right: 20px;
+  }
+  &__adress {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 302px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+  }
+  &__adress-location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+  }
+  &__adress-location::before {
+    content: url(../img/adress.svg);
+    margin-right: 20px;
+  }
+  &__adress-park {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+  }
+  &__adress-park::before {
+    content: url(../img/adress.svg);
+    margin-right: 20px;
+  }
+
+  // &__faq-item {
+  //   margin-bottom: 40px;
+  // }
+
+  // &__faq-text {
+  //   margin-left: 20px;
+  //   margin: 0;
+  //   display: inline-block;
+  //   font-weight: 400;
+  //   font-size: 20px;
+  //   line-height: 115%;
+  //   letter-spacing: 0.06em;
+  //   color: var(--accent-color);
+  // }
+  // &__adress-item {
+  //   margin-bottom: 40px;
+  // }
+  // &__adress-text {
+  //   margin-left: 20px;
+  //   width: 268px;
+  //   margin: 0;
+  //   display: inline-block;
+  //   font-weight: 400;
+  //   font-size: 20px;
+  //   line-height: 115%;
+  //   letter-spacing: 0.06em;
+  //   color: var(--accent-color);
+  // }
+}

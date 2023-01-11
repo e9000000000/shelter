@@ -5,18 +5,28 @@
   @include bg-cover;
   &__wrapper {
     @include flex-all-sb;
+    @include hard {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+    }
   }
   &__content {
-    flex-basis: 460px;
+    max-width: 460px;
+    @include hard {
+      margin-bottom: 100px;
+    }
   }
   &__image {
-    transform: translateY(5px);
+    transform: translateY(4px);
   }
   &__title {
     margin: 0;
     margin-bottom: 42px;
     max-width: 310px;
     font-weight: 400;
+    text-align: left;
     font-size: 44px;
     line-height: 130%;
     color: var(--light-color);
@@ -24,9 +34,14 @@
   &__descr {
     margin: 0;
     margin-bottom: 42px;
+    text-align: left;
     color: var(--lactic-color);
   }
   &__btn {
     background-color: var(--accent-color);
+    transition: 0.3s ease-in-out;
+  }
+  &__btn:hover {
+    background-color: var(--snowy-color);
   }
 }
