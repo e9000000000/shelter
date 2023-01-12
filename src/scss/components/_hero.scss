@@ -6,10 +6,9 @@
   &__wrapper {
     @include flex-all-sb;
     @include hard {
-      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       text-align: center;
-      flex-wrap: wrap;
     }
   }
   &__content {
@@ -18,9 +17,7 @@
       margin-bottom: 100px;
     }
   }
-  &__image {
-    transform: translateY(4px);
-  }
+
   &__title {
     margin: 0;
     margin-bottom: 42px;
@@ -30,12 +27,21 @@
     font-size: 44px;
     line-height: 130%;
     color: var(--light-color);
+    @include mobile-small {
+      display: inline-block;
+      max-width: 230px;
+      font-size: 25px;
+      text-align: center;
+    }
   }
   &__descr {
     margin: 0;
     margin-bottom: 42px;
     text-align: left;
     color: var(--lactic-color);
+    @include mobile-small {
+      text-align: center;
+    }
   }
   &__btn {
     background-color: var(--accent-color);
@@ -43,5 +49,9 @@
   }
   &__btn:hover {
     background-color: var(--snowy-color);
+  }
+
+  &__image {
+    transform: translateY(4px);
   }
 }

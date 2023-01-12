@@ -6,16 +6,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include n-tablet {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
   }
   &__title {
     margin: 0;
     margin-bottom: 20px;
-    width: 300px;
+    display: inline-block;
+    max-width: 300px;
     color: var(--dark-color);
+    @include mobile-small {
+      font-size: 25px;
+      width: 220px;
+    }
   }
   &__content {
     max-width: 380px;
     margin-left: 30px;
+    @include n-tablet {
+      margin-left: 0;
+      margin-bottom: 60px;
+      @include mobile-small {
+        text-align: center;
+      }
+    }
   }
   &__descr {
     margin: 0;
@@ -25,6 +41,7 @@
     font-size: 15px;
     line-height: 110%;
     letter-spacing: 0.06em;
+    color: var(--dark-color);
   }
   &__card {
     display: inline-flex;
@@ -41,6 +58,9 @@
     line-height: 115%;
     letter-spacing: 0.06em;
     color: var(--dark-color);
+    @include small-tablet {
+      font-size: 15px;
+    }
   }
   &__text {
     margin: 0;

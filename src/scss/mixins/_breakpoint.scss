@@ -18,8 +18,32 @@
   }
 }
 
+@mixin n-tablet {
+  @media (max-width: (1024px)) {
+    @content;
+  }
+}
+
 @mixin small-tablet {
   @media (max-width: (768px)) {
+    @content;
+  }
+}
+
+@mixin f-tablet {
+  @media (max-width: (590px)) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (max-width: (420px)) {
+    @content;
+  }
+}
+
+@mixin mini {
+  @media (max-width: (370px)) {
     @content;
   }
 }
@@ -30,14 +54,14 @@
   }
 }
 
-@mixin for-desktop {
-  @media (min-width: (1025px)) {
+@mixin big {
+  @media (min-width: (769px)) {
     @content;
   }
 }
 
-@mixin big {
-  @media (min-width: (769px)) {
+@mixin for-desktop {
+  @media (min-width: (1025px)) {
     @content;
   }
 }
