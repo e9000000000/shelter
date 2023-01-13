@@ -1,11 +1,14 @@
 .our {
   padding: 80px 0 100px;
   background-color: var(--sectionbg-color);
+
   @include bg-cover;
+
   &__wrapper {
     position: relative;
     text-align: center;
   }
+
   &__title {
     display: inline-block;
     margin: 0;
@@ -27,11 +30,13 @@
     border-radius: 9px 9px 0 0;
     transition: 0.3s ease-in-out;
   }
+
   &__item:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     background-color: #ffffff;
     cursor: pointer;
   }
+
   &__name {
     margin: 0;
     margin: 30px 0;
@@ -41,19 +46,23 @@
     letter-spacing: 0.06em;
     color: var(--dark-color);
   }
+
   &__btn {
     border: 2px solid var(--accent-color);
     border-radius: 100px;
     transition: 0.3s ease-in-out;
   }
+
   &__btn:hover {
     border: 2px solid var(--snowy-color);
     background-color: var(--snowy-color);
   }
+
   &__button {
     background-color: var(--accent-color);
     transition: 0.3s ease-in-out;
   }
+
   &__button:hover {
     background-color: var(--snowy-color);
   }
@@ -69,9 +78,11 @@
     border-radius: 100px;
     transition: 0.3s ease-in-out;
   }
+
   &__slider-btn--prev:hover {
     background-color: var(--accent-color);
   }
+
   &__slider-btn--next {
     display: block;
     position: absolute;
@@ -83,6 +94,7 @@
     border-radius: 100px;
     transition: 0.3s ease-in-out;
   }
+
   &__slider-btn--next:hover {
     background-color: var(--accent-color);
   }

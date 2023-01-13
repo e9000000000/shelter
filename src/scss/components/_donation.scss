@@ -1,7 +1,9 @@
 .donation {
   padding: 80px 0 100px;
   background-color: var(--sectionbg-color);
+
   @include bg-cover;
+
   &__wrapper {
     display: flex;
     justify-content: center;
@@ -11,31 +13,38 @@
       flex-direction: column-reverse;
     }
   }
+
   &__title {
     margin: 0;
     margin-bottom: 20px;
     display: inline-block;
     max-width: 300px;
     color: var(--dark-color);
+
     @include mobile-small {
       font-size: 25px;
       width: 220px;
     }
   }
+
   &__content {
     max-width: 380px;
     margin-left: 30px;
+
     @include n-tablet {
       margin-left: 0;
       margin-bottom: 60px;
+
       @include mobile-small {
         text-align: center;
       }
     }
   }
+
   &__descr {
     margin: 0;
     margin-bottom: 20px;
+    display: inline-block;
     font-family: "Georgia";
     font-weight: 400;
     font-size: 15px;
@@ -43,6 +52,7 @@
     letter-spacing: 0.06em;
     color: var(--dark-color);
   }
+
   &__card {
     display: inline-flex;
     align-items: center;
@@ -51,6 +61,7 @@
     background-color: var(--accent-color);
     padding: 10px 15px;
   }
+
   &__link {
     margin-left: 15px;
     font-weight: 400;
@@ -62,6 +73,7 @@
       font-size: 15px;
     }
   }
+
   &__text {
     margin: 0;
     font-family: "Arial";

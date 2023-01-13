@@ -11,6 +11,11 @@
     margin-bottom: 60px;
     max-width: 300px;
     color: var(--dark-color);
+
+    @include mobile-small {
+      max-width: 220px;
+      font-size: 25px;
+    }
   }
 
   &__menu {
@@ -34,6 +39,7 @@
     @include small-tablet {
       flex-basis: 33%;
     }
+
     @include for-tablet {
       flex-basis: 50%;
     }

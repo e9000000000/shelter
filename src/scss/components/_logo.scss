@@ -1,5 +1,6 @@
 .logo {
   display: inline-block;
+
   &__title {
     margin: 0;
     margin-bottom: 10px;
@@ -9,6 +10,7 @@
     letter-spacing: 0.06em;
     color: var(--accent-color);
   }
+
   &__subtitle {
     margin: 0;
     font-family: "Arial";
