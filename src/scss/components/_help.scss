@@ -11,11 +11,6 @@
     margin-bottom: 60px;
     max-width: 300px;
     color: var(--dark-color);
-
-    @include mobile-small {
-      max-width: 220px;
-      font-size: 25px;
-    }
   }
 
   &__menu {
@@ -39,7 +34,6 @@
     @include small-tablet {
       flex-basis: 33%;
     }
-
     @include for-tablet {
       flex-basis: 50%;
     }
@@ -187,55 +181,6 @@
     line-height: 115%;
     letter-spacing: 0.06em;
     color: var(--dark-color);
-
-  }
-
-  &__wrapper {
-    display: grid;
-    row-gap: 55px;
-  }
-
-  &__items {
-    display: grid;
-    row-gap: 55px;
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  &__items__bottom {
-    display: grid;
-    row-gap: 55px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-
-  // &__item-1 {
-  //   grid-area: 1 / 1 / 2 / 2;
-  // }
-  // &__item-2 {
-  //   grid-area: 2 / 2 / 3 / 3;
-  // }
-  // &__item-3 {
-  //   grid-area: 1 / 3 / 2 / 4;
-  // }
-  // &__item-4 {
-  //   grid-area: 2 / 4 / 3 / 5;
-  // }
-  // &__item-5 {
-  //   grid-area: 1 / 5 / 2 / 6;
-  // }
-  // &__item-6 {
-  //   grid-area: 2 / 6 / 3 / 7;
-  // }
-  // &__item-7 {
-  //   grid-area: 1 / 7 / 2 / 8;
-  // }
-  // &__item-8 {
-  //   grid-area: 2 / 8 / 3 / 9;
-  // }
-  // &__item-9 {
-  //   grid-area: 1 / 9 / 2 / 10;
-  // }
-}
 
     @include for-tablet {
       font-size: 15px;
