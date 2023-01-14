@@ -2,6 +2,7 @@
   &__list {
     display: flex;
     margin-top: 20px;
+
     @include small-tablet {
       @include flex-all-center;
 
@@ -10,13 +11,16 @@
       height: 100%;
     }
   }
+
   &__item:not(:last-child) {
     margin-right: 35px;
+
     @include small-tablet {
       margin-right: 0;
       margin-bottom: 40px;
     }
   }
+
   &__link {
     font-family: "Arial";
     font-weight: 400;
@@ -24,17 +28,21 @@
     line-height: 160%;
     color: var(--lactic-color);
     transition: color 0.3s ease-in-out;
+
     @include small-tablet {
       font-size: 32px;
     }
   }
+
   &__link:hover {
     color: var(--clear-color);
   }
+
   &__link:active {
     color: var(--clear-color);
     border-bottom: 3px solid var(--accent-color);
   }
+
   @include small-tablet {
     position: fixed;
     top: 0;

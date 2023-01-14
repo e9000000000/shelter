@@ -1,6 +1,7 @@
 .our {
   padding: 80px 0 100px;
   background-color: var(--sectionbg-color);
+
   @include bg-cover;
 
   &__wrapper {
@@ -84,7 +85,6 @@
 
   &__test {
     display: flex;
-    background-color: red;
   }
 
   &__slider-btn--prev:hover {

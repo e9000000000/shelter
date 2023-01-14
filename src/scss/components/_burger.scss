@@ -2,12 +2,14 @@
   @include big {
     display: none;
   }
+
   @include small-tablet {
     position: relative;
     width: 30px;
     height: 22px;
     background-color: transparent;
     border: none;
+
     &__line {
       position: absolute;
       top: 50%;
@@ -37,6 +39,7 @@
     height: 30px;
     background-color: transparent;
     border: none;
+
     &-line {
       position: absolute;
       top: 50%;
